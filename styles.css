@@ -10,9 +10,6 @@ html {
   height: 100%;
 }
 
-div {
-  align-content: center;
-}
 body {
   background: var(--cg-grey);
   position: relative;
