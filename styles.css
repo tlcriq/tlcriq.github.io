@@ -231,7 +231,20 @@ label {
   font-weight: bold;
 }
 
-input[type="text"],
+/* Selects all input tags that have the 
+* required attribute. */
+input[required] {
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+
+/* Selects all input tags that 
+* have a type attribute with the value "text"*/
+input[type="text"] {
+  height: 10%;
+  width: 10%;
+}
+
 input[type="email"],
 textarea {
   width: 100%;
