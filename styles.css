@@ -4,6 +4,7 @@
   --cg-blue: rgb(36, 94, 255);
   --cg-grey: rgb(243, 243, 243);
   --cg-white: rgb(255, 255, 255);
+  --cg-teal: rgb(33, 69, 81);
 }
 
 html {
@@ -34,7 +35,7 @@ body {
   align-items: center;
   text-align: center;
 
-  background-color: var(--cg-black);
+  background-color: var(--cg-teal);
   color: var(--cg-white);
   padding: 0px 0px;
 
@@ -56,7 +57,7 @@ body {
 .navbar a {
   color: var(--cg-white);
   font-weight: bold;
-  margin: 0 12px;
+  margin: 0 60px 0 6px;
   text-decoration: none;
   letter-spacing: 2px;
 
@@ -268,7 +269,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--cg-black);
+  background-color: var(--cg-teal);
   color: var(--cg-white);
   position: absolute;
   bottom: 0;
