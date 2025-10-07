@@ -43,6 +43,7 @@ body {
   /* border: solid red; */
 }
 
+
 .nav-list {
   display: flex;
   flex-direction: row;
@@ -76,6 +77,8 @@ body {
 
 .logo a {
   font-family: Georgia;
+  font-size: larger;
+  
 }
 
 .logo a:hover {
