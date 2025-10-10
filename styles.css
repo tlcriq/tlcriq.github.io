@@ -107,6 +107,7 @@ main {
   flex-direction: row;
   max-width: 100%;
   margin: 1em 0 2em 0;
+  max-height: 400;
 
   /* Debug border */
   /* border: 2px solid blue; */
