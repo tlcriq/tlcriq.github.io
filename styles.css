@@ -105,9 +105,8 @@ main {
 .project {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  max-width: 100%;
   margin: 1em 0 2em 0;
-  max-height: 400;
 
   /* Debug border */
   /* border: 2px solid blue; */
@@ -135,8 +134,7 @@ main {
   display: flex;
   background-color: var(--cg-white);
   width: 30%;
-  height: 500px;
-  flex-shrink: 1;
+  height: 400px;
   padding: 0 20px;
   margin: 0px;
   line-height: 1.5;
