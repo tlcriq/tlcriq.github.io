@@ -5,6 +5,7 @@
   --cg-grey: rgb(243, 243, 243);
   --cg-white: rgb(255, 255, 255);
   --cg-teal: rgb(33, 69, 81);
+  --cg-navy: rgb(63, 88, 162);
 }
 
 html {
@@ -132,7 +133,7 @@ main {
 
 .project-details {
   display: flex;
-  background-color: var(--cg-teal);
+  background-color: var(--cg-navy);
   color: var(--cg-white);
   width: 30%;
   height: 406px;
