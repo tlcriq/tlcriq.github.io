@@ -176,7 +176,7 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #f8f8f8;
+  background-color: #cdd9df;
   border: 1px solid #ccc;
   border-radius: 5px;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
@@ -185,6 +185,7 @@ main {
 .about-image img {
   max-width: 300px;
   border-radius: 3px;
+  border-color: black;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
 }
 
