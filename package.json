@@ -1,0 +1,23 @@
+{
+  "name": "tlcriq.github.io",
+  "version": "1.0.0",
+  "description": "This is a personal website build using the Hack4Impact Starter Pack!\r Have a look around!\r Visit at hhtps://tlcriq.github.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlcriq/tlcriq.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tlcriq/tlcriq.github.io/issues"
+  },
+  "homepage": "https://github.com/tlcriq/tlcriq.github.io#readme",
+  "dependencies": {
+    "typescript": "^5.9.3"
+  }
+}
