@@ -229,6 +229,23 @@ main {
   font-family: Georgia;
 }
 
+/* homegrown CSS for blog page */
+.blog-entries {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #cdd9df;
+  border: 1px solid #ccc;
+}
+
+.blog-image {
+  max-width: 300px;
+  border-radius: 3px;
+  border-color: black;
+  border-radius: 20;
+}
+
 /* CSS for contact form */
 
 label {

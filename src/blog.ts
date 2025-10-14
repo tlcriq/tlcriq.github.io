@@ -39,8 +39,11 @@ blogs.forEach((blog) => {
     const title = document.createElement('h1');
     const description = document.createElement('p');
 
+    entry.className = "blog-entry"
+
     image.src = blog.image;
     image.alt = blog.imageAlt;
+    image.className = "blog-image"
 
     title.textContent = blog.title;
     description.textContent = blog.description
@@ -50,7 +53,4 @@ blogs.forEach((blog) => {
     entry.appendChild(image)
     entry.appendChild(description)
     blogEntries?.appendChild(entry)
-
-    const innterhtml = entry.innerHTML = "yo";
-    console.log(entry)
 })

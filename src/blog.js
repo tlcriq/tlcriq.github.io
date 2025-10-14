@@ -24,12 +24,11 @@ blogs.forEach(function (blog) {
     var description = document.createElement('p');
     image.src = blog.image;
     image.alt = blog.imageAlt;
+    image.className = "blog-image";
     title.textContent = blog.title;
     description.textContent = blog.description;
     entry.appendChild(title);
     entry.appendChild(image);
     entry.appendChild(description);
     blogEntries === null || blogEntries === void 0 ? void 0 : blogEntries.appendChild(entry);
-    var innterhtml = entry.innerHTML = "yo";
-    console.log(entry);
 });
