@@ -1,27 +1,30 @@
 var blogs = [
     {
-        title: "Initial entry",
+        title: "Initial testing entry",
         date: "October 10th, 2025",
         description: "This is my blog. This is an example post, so here's a picture of how the site looked a couple days ago.",
         image: "this_website.png",
         imageAlt: "Just the html here",
-        slug: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        slug: "blog-1"
     },
     {
-        title: "Initial entry pt. 2",
+        title: "Second testing entry",
         date: "October 10th, 2025",
-        description: "I am currently creating a typescript function for this to eventually be used. Here's my current headshot.",
+        description: "I am creating a typescript function to make these interactable. I also need a picture for this, so here's my current headshot.",
         image: "Tate2.jpeg",
         imageAlt: "Gorgeous Guy",
-        slug: "https://tlcriq.github.io/"
+        slug: "blog-2"
     }
 ];
 var blogEntries = document.getElementById('blog-entries');
 blogs.forEach(function (blog) {
+    var link = document.createElement('a');
     var entry = document.createElement('div');
     var image = document.createElement("img");
     var title = document.createElement('h1');
     var description = document.createElement('p');
+    link.href = blog.slug;
+    entry.className = "rounded";
     image.src = blog.image;
     image.alt = blog.imageAlt;
     image.className = "blog-image";
@@ -30,5 +33,6 @@ blogs.forEach(function (blog) {
     entry.appendChild(title);
     entry.appendChild(image);
     entry.appendChild(description);
-    blogEntries === null || blogEntries === void 0 ? void 0 : blogEntries.appendChild(entry);
+    link.appendChild(entry);
+    blogEntries === null || blogEntries === void 0 ? void 0 : blogEntries.appendChild(link);
 });

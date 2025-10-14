@@ -39,6 +39,7 @@ body {
   background-color: var(--cg-teal);
   color: var(--cg-white);
   padding: 0px 0px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
   /* Debug border */
   /* border: solid red; */
@@ -61,10 +62,10 @@ body {
   font-weight: bold;
   margin: 0 60px 0 6px;
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 0.5px;
 
-  font-size: large;
-  font-family: monospace;
+  font-size: larger;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .navbar a:hover {
@@ -239,11 +240,21 @@ main {
   border: 1px solid #ccc;
 }
 
+.rounded {
+  flex: 1;
+  background-color: #f8f8f8;
+  border-radius: 45px;
+  margin: 20px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family:Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .blog-image {
-  max-width: 300px;
-  border-radius: 3px;
+  max-width: 200px;
+  max-height: 200px;
   border-color: black;
-  border-radius: 20;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 /* CSS for contact form */

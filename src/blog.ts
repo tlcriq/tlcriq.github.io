@@ -13,33 +13,36 @@ type Blog = {
 
 const blogs: Blog[] = [
     {
-        title: "Initial entry",
+        title: "Initial testing entry",
         date: "October 10th, 2025",
         description: "This is my blog. This is an example post, so here's a picture of how the site looked a couple days ago.",
         image: "this_website.png",
         imageAlt: "Just the html here",
-        slug: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        slug: "blog-1"
     },
     {
-        title: "Initial entry pt. 2",
+        title: "Second testing entry",
         date: "October 10th, 2025",
-        description: "I am currently creating a typescript function for this to eventually be used. Here's my current headshot.",
+        description: "I am creating a typescript function to make these interactable. I also need a picture for this, so here's my current headshot.",
         image: "Tate2.jpeg",
         imageAlt: "Gorgeous Guy",
-        slug: "https://tlcriq.github.io/"
+        slug: "blog-2"
     }
 ]
+
 
 const blogEntries = document.getElementById('blog-entries')
 
 blogs.forEach((blog) => {
 
+    const link = document.createElement('a');
     const entry = document.createElement('div');
     const image = document.createElement("img");
     const title = document.createElement('h1');
     const description = document.createElement('p');
 
-    entry.className = "blog-entry"
+    link.href = blog.slug
+    entry.className = "rounded"
 
     image.src = blog.image;
     image.alt = blog.imageAlt;
@@ -52,5 +55,6 @@ blogs.forEach((blog) => {
     entry.appendChild(title)
     entry.appendChild(image)
     entry.appendChild(description)
-    blogEntries?.appendChild(entry)
+    link.appendChild(entry)
+    blogEntries?.appendChild(link)
 })
