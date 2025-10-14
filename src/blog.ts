@@ -23,7 +23,7 @@ const blogs: Blog[] = [
     {
         title: "Initial entry pt. 2",
         date: "October 10th, 2025",
-        description: "I am currently creating a typescript function for tis to eventually be used. Here's my current headshot.",
+        description: "I am currently creating a typescript function for this to eventually be used. Here's my current headshot.",
         image: "Tate2.jpeg",
         imageAlt: "Gorgeous Guy",
         slug: "https://tlcriq.github.io/"
@@ -43,6 +43,7 @@ blogs.forEach((blog) => {
     image.alt = blog.imageAlt;
 
     title.textContent = blog.title;
+    description.textContent = blog.description
 
 
     entry.appendChild(title)
