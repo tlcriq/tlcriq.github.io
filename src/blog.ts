@@ -18,7 +18,7 @@ const blogs: Blog[] = [
         description: "This is my blog. This is an example post, so here's a picture of how the site looked a couple days ago.",
         image: "this_website.png",
         imageAlt: "Just the html here",
-        slug: "blog-1"
+        slug: "first-entry"
     },
     {
         title: "Second testing entry",
@@ -26,7 +26,7 @@ const blogs: Blog[] = [
         description: "I am creating a typescript function to make these interactable. I also need a picture for this, so here's my current headshot.",
         image: "Tate2.jpeg",
         imageAlt: "Gorgeous Guy",
-        slug: "blog-2"
+        slug: "second-entry"
     }
 ]
 
@@ -35,13 +35,12 @@ const blogEntries = document.getElementById('blog-entries')
 
 blogs.forEach((blog) => {
 
-    const link = document.createElement('a');
     const entry = document.createElement('div');
     const image = document.createElement("img");
     const title = document.createElement('h1');
     const description = document.createElement('p');
+    const link = document.createElement('a');
 
-    link.href = blog.slug
     entry.className = "rounded"
 
     image.src = blog.image;
@@ -50,11 +49,12 @@ blogs.forEach((blog) => {
 
     title.textContent = blog.title;
     description.textContent = blog.description
-
+    link.href = "blogs/" + blog.slug + ".html"
+    link.text = "See more"
 
     entry.appendChild(title)
     entry.appendChild(image)
     entry.appendChild(description)
-    link.appendChild(entry)
-    blogEntries?.appendChild(link)
+    entry.appendChild(link)
+    blogEntries?.appendChild(entry)
 })
