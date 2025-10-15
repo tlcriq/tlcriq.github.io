@@ -10,9 +10,9 @@ var blogs = [
     {
         title: "Second testing entry",
         date: "October 10th, 2025",
-        description: "I am creating a typescript function to make these interactable. I also need a picture for this, so here's my current headshot.",
-        image: "website_1.1",
-        imageAlt: "webception",
+        description: "I am creating a typescript function to make these interactable. Here's how the site looks now.",
+        image: "website_1.1.png",
+        imageAlt: "second page version",
         slug: "second-entry"
     }
 ];
